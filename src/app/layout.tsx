@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import SiteHeader from "@/components/SiteHeader";
@@ -22,6 +22,26 @@ export const metadata: Metadata = {
   },
   description:
     "I'm Mesh. I build things (servers, spreadsheets, a truck, a career) and I write down what actually works. Including the parts nobody tells you.",
+  openGraph: {
+    siteName: "Mesh Rahman",
+    type: "website",
+    locale: "en_CA",
+    url: "https://meshrahman.com",
+  },
+  twitter: {
+    card: "summary",
+  },
+  alternates: {
+    types: {
+      "application/rss+xml": [
+        { url: "/feed.xml", title: "Mesh Rahman, essays" },
+      ],
+    },
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#0c0c0e",
 };
 
 const personSchema = {

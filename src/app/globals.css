@@ -27,3 +27,16 @@ body {
   background: var(--accent);
   color: #0c0c0e;
 }
+
+/* Keyboard users get the accent ring everywhere (01-PRD F7, WCAG AA). */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
