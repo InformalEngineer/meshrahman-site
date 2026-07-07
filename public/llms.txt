@@ -20,6 +20,7 @@ site: https://informalengineer.com
 
 ## Essays
 
+- [The website costs $0 a month now](https://meshrahman.com/essays/zero-dollar-website/)
 - [My actual budgeting system](https://meshrahman.com/essays/my-budgeting-system/)
 - [Getting rid of debt](https://meshrahman.com/essays/debt-and-the-mortgage-lever/)
 - [Options fundamentals for beginners](https://meshrahman.com/essays/options-fundamentals/)
