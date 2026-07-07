@@ -8,7 +8,7 @@ migrated: true
 sourceSlug: options-fundamentals-for-beginners
 ---> A note before anything else: this is education, not advice. I'm an engineer on the internet, not your financial advisor, and past me made trades that current me would like a word about.
 
-Options are by far the BEST way to increase returns on the assets you choose to trade, but also the very BEST way to protect & hedge yourself against market crashes and corrections. There is also spot and leveraged futures trading which I dive into as well, if you are a beginner I recommend you get started [here](https://www.meshaelr.com/technical-analysis-candlestick-charts/).
+Options are by far the BEST way to increase returns on the assets you choose to trade, but also the very BEST way to protect & hedge yourself against market crashes and corrections. There is also spot and leveraged futures trading which I dive into as well, if you are a beginner I recommend you get started with the basics of reading candlestick charts first.
 
 Let's go over the fundamentals in a little more detail and we will call this our option primer. It goes without saying, if you plan on trading option contracts, do so with extreme caution. There are 100 horror stories for every success. Trading is a skill that requires tremendous amounts of discipline and greed has no place here.
 
@@ -40,7 +40,7 @@ You can either buy or sell, both calls or put options. Buying **calls** is a lon
 
 This might seem confusing at first, but it becomes easier with repetition and practice. There must be a buyer or seller on the opposite end of all option trade. If you are buying and they are selling the same option type that each would have the exact opposite outlook and directional bias. I will occasionally update my content with images and videos in the future to drive this concept in more.
 
-![](https://meshaelr.com/content/images/2022/07/Options-.png)
+![](/images/2022/07/Options-.png)
 
 ## Creating a Basic Options Trade Plan.
 

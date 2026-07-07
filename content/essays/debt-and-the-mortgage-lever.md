@@ -6,7 +6,9 @@ excerpt: "How I think about paying debt down, and the mortgage lever I keep pull
 readingTime: 5
 migrated: true
 sourceSlug: 4-simple-ways-to-get-rid-of-debt-forever
----A year ago I was buried in debt. How did I get to where I was I have no idea. The money that I was earning  was going into my credit cards to just bring down the amount so I wouldn't max it out again that month. I made a promise to my late father and myself to get rid of all of the debt that was haunting me.
+---
+
+A year ago I was buried in debt. How did I get to where I was I have no idea. The money that I was earning  was going into my credit cards to just bring down the amount so I wouldn't max it out again that month. I made a promise to my late father and myself to get rid of all of the debt that was haunting me.
 
 It seems more often than anything that paying that debt is an impossible task, there are gurus who suggest you need to live like a hermit for a few years to get back on track. That works for some, not so much for others. I mean try living in Toronto, while being a student. The money won't matter if you sacrifice your physical and mental well being to attain it.
 
