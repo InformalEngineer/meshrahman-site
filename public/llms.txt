@@ -1,0 +1,30 @@
+# Mesh Rahman
+
+> Personal site of Mesh (Meshael) Rahman: a Toronto-based engineer (P.Eng) and
+> project manager (PMP) who builds things (homelab servers, spreadsheets, a
+> truck, subway and data-centre megaprojects at the day job) and writes down
+> what actually works, with real numbers. ADHD systems, money, career, and
+> experiments, written in plain first person.
+
+The technical procedures (guides, lab notes, parts kits) live on the sibling
+site: https://informalengineer.com
+
+## Pages
+
+- [About](https://meshrahman.com/about/): the story in chapters, from Minecraft YouTube (20,000 subscribers) to megaprojects
+- [Essays](https://meshrahman.com/essays/): personal writing with real numbers, tagged money / career / adhd / experiments / builds
+- [Projects](https://meshrahman.com/projects/): current and shipped builds
+- [Now](https://meshrahman.com/now/): monthly snapshot
+- [Reading](https://meshrahman.com/reading/): book notes in a Western / Islamic / Eastern structure
+- [Contact](https://meshrahman.com/contact/): email, plain
+
+## Essays
+
+- [My actual budgeting system](https://meshrahman.com/essays/my-budgeting-system/)
+- [Getting rid of debt](https://meshrahman.com/essays/debt-and-the-mortgage-lever/)
+- [Options fundamentals for beginners](https://meshrahman.com/essays/options-fundamentals/)
+- [Manufacturing luck](https://meshrahman.com/essays/manufacturing-luck/)
+- [Building a daily writing habit](https://meshrahman.com/essays/daily-writing-habit/)
+- [Meetings are a tax](https://meshrahman.com/essays/meetings-are-a-tax/)
+- [I taped my mouth shut for 16 months](https://meshrahman.com/essays/mouth-taping-16-months/)
+- [Everything I learned selling on Amazon for 3 months](https://meshrahman.com/essays/amazon-fba-retrospective/)

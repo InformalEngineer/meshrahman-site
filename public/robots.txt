@@ -1,0 +1,5 @@
+# AI crawlers welcome (01-PRD §8, discovery-stage call, revisit annually)
+User-agent: *
+Allow: /
+
+Sitemap: https://meshrahman.com/sitemap.xml
