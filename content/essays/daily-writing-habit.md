@@ -42,7 +42,7 @@ I ask myself a few questions:
 
 > What time of day can I be least responsive without concern?
 
-![](https://meshaelr.com/content/images/2022/11/Golden-Time-Block---MeshaelR.png)
+![](/images/2022/11/Golden-Time-Block---MeshaelR.png)
 
 Please note, there is no correct or incorrect answer here. Every individual will have different preferences, schedules and responsibilities.
 

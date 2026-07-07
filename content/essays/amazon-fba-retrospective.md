@@ -6,13 +6,15 @@ excerpt: "I made money on paper and lost money in real life. The honest retrospe
 readingTime: 9
 migrated: true
 sourceSlug: amazon-fba-honest-review-of-selling-on-amazon-for-3-months
----So over this post I will cover everything I have learned over three months of selling on Amazon FBA. During these months, I utilized a business model revolving around the concept of Retail Arbitrage. In this post I will be outlining a few of the concepts I learned as well as sharing some of the knowledge I picked up during my time selling.
+---
+
+So over this post I will cover everything I have learned over three months of selling on Amazon FBA. During these months, I utilized a business model revolving around the concept of Retail Arbitrage. In this post I will be outlining a few of the concepts I learned as well as sharing some of the knowledge I picked up during my time selling.
 
 Please note, my experiences are based on [Amazon FBA](https://sell.amazon.ca/fulfill.html?ref_=azca_soa_sd_fba_card&initialSessionID=138-0897032-8752650&ld=SECASOAGOOG-Test-00003) (Fulfilled by Amazon) not Amazon FBM (Fulfilled by Merchant). I will cover the differences and their pros and cons in another post. In general, with FBA you send your products to Amazon, and they deal with the logistics of shipping it to the shopper and the customer service in the case of an issue. Amazon holds your products at a fee and there are quite a few other fees involved, however the concept of sending the products in and forgetting about it is much nicer than having to actively manage your shop.
 
 **There are 4 Major types of Amazon FBA Businesses:**
 
-![](https://meshaelr.com/content/images/2022/06/amazon-arbitrage.png)
+![](/images/2022/06/amazon-arbitrage.png)
 
 ## First what is Arbitrage?
 
@@ -52,7 +54,7 @@ Source products on Alibaba or other manufacturer and create your own brand and b
 
 ### Wholesale
 
-![](https://meshaelr.com/content/images/2022/06/Wholesale-1024x687.jpeg)
+![](/images/2022/06/Wholesale-1024x687.jpeg)
 
 Buying bulk amount of an already established product at a significant discount. For instance, this is exactly what your favorite retailers do. They buy products by companies that are considered household names such as Lotions by Aveeno, they purchase them at a significant discount, and then allocate a dollar amount to them so they can make a profit after paying for management fees, storage fees and any other fees a larger or smaller retailer might incur.
 
@@ -70,7 +72,7 @@ Amazon FBA charges you close to 40% on all product sales, and I suppose you can 
 
 Note the 40% listed above is a rough amount. But the figure below is before I started getting charged for shipments to the facilities.
 
-![](https://meshaelr.com/content/images/2022/06/image-768x442.png)
+![](/images/2022/06/image-768x442.png)
 
 ## So, How much did I earn with Amazon FBA?
 
@@ -78,7 +80,7 @@ In general the total gross revenue I was able to generate was approximately $418
 
 Most of the products were listed between mid-October to mid-December. Due to the Christmas rush I think I was able to receive a lot more sales. One thing not shown here, is returns, while I was lucky enough to not have received too many returns, the few that I did receive were on big ticket items. There are ways to offload those losses, either to your taxes or get the product sent back from Amazon, but those are all very involved and at the time I just let them slide.
 
-![](https://meshaelr.com/content/images/2022/06/image-768x709.png)
+![](/images/2022/06/image-768x709.png)
 
 ## How to make even more money with Amazon FBA
 
@@ -86,9 +88,9 @@ Learn the rules, this is so dang important especially when you first start out. 
 
 Do not let this deter you, if anything this is great news for everyone that is looking to make a profit in this industry. The barriers that Amazon places for new sellers actually ends up promoting the sellers that are serious and are in it for the long game.
 
-When I first started, I was gated from essentially everything that I could purchase at an amazing price. Over time, I started getting un-gated from a lot of companies, including Nickelodeon and Pokémon. I want to make another writeup covering how to work with gates and how to get products un-gated over time. If you have any specific questions you can reach me [here.](https://www.meshaelr.com/contact/)
+When I first started, I was gated from essentially everything that I could purchase at an amazing price. Over time, I started getting un-gated from a lot of companies, including Nickelodeon and Pokémon. I want to make another writeup covering how to work with gates and how to get products un-gated over time. If you have any specific questions you can reach me [here.](/contact/)
 
-![](https://meshaelr.com/content/images/2022/06/image-1-1024x314.png)
+![](/images/2022/06/image-1-1024x314.png)
 
 ## In Summary
 

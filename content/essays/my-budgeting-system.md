@@ -6,7 +6,9 @@ excerpt: "The system that ran my money since 2019. A rebuild with my current cat
 readingTime: 7
 migrated: true
 sourceSlug: how-to-budget-your-money-in-7-easy-steps
----Closing your eyes to your financial issues has never solved your problems in the past. It's time to budget your money with ease. All you need is an automated system and a few changes to your awareness.   Check out our [guide to saving a lot of money fast](#). Use your new-found knowledge and cash to establish a budget so you can spend money on the things you love guilt-free!
+---
+
+Closing your eyes to your financial issues has never solved your problems in the past. It's time to budget your money with ease. All you need is an automated system and a few changes to your awareness.   Use your new-found knowledge and cash to establish a budget so you can spend money on the things you love guilt-free!
 
 ## 7 Steps to creating a budget that will guarantee freedom
 
@@ -82,7 +84,7 @@ Create a section for all your expenses, and divide them by your total income to 
 
 In a later post, we want to show you exactly how to automate your budget allocations so there are fewer human interactions. You want to find the golden ratio when it comes to the percentages in your budget allocation and just let the computer do the rest. You should only have to check in every few months to monitor and establish changes.
 
-![](https://meshaelr.com/content/images/2022/06/DF29C355-1475-4245-9A20-40E13CDD3DBA.png)
+![](/images/2022/06/DF29C355-1475-4245-9A20-40E13CDD3DBA.png)
 
 Here is a sample budget I created in my first year of university. It was simple. 
 
