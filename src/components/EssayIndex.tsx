@@ -14,32 +14,43 @@ function EssayIndexInner({ essays }: { essays: EssayMeta[] }) {
     initial && TAGS.includes(initial) ? initial : null
   );
 
+  // Keep the URL shareable without a server round trip (static export).
+  const select = (tag: string | null) => {
+    setActive(tag);
+    window.history.replaceState(null, "", tag ? `/essays/?tag=${tag}` : "/essays/");
+  };
+
+  const counts = Object.fromEntries(
+    TAGS.map((t) => [t, essays.filter((e) => e.tags.includes(t)).length])
+  );
   const shown = active ? essays.filter((e) => e.tags.includes(active)) : essays;
 
   return (
     <>
-      <div className="mt-6 flex flex-wrap gap-2">
+      <div role="group" aria-label="Filter essays by tag" className="mt-6 flex flex-wrap gap-2">
         <button
-          onClick={() => setActive(null)}
-          className={`rounded px-3 py-1 font-mono text-xs ${
+          onClick={() => select(null)}
+          aria-pressed={active === null}
+          className={`rounded px-3 py-1 font-mono text-xs transition-colors ${
             active === null
               ? "bg-accent text-zinc-950"
-              : "border border-zinc-700 text-zinc-400 hover:text-zinc-100"
+              : "border border-zinc-700 text-zinc-400 hover:border-zinc-500 hover:text-zinc-100"
           }`}
         >
-          all
+          all ({essays.length})
         </button>
         {TAGS.map((tag) => (
           <button
             key={tag}
-            onClick={() => setActive(tag)}
-            className={`rounded px-3 py-1 font-mono text-xs ${
+            onClick={() => select(tag)}
+            aria-pressed={active === tag}
+            className={`rounded px-3 py-1 font-mono text-xs transition-colors ${
               active === tag
                 ? "bg-accent text-zinc-950"
-                : "border border-zinc-700 text-zinc-400 hover:text-zinc-100"
+                : "border border-zinc-700 text-zinc-400 hover:border-zinc-500 hover:text-zinc-100"
             }`}
           >
-            {tag}
+            {tag} ({counts[tag]})
           </button>
         ))}
       </div>
@@ -48,15 +59,17 @@ function EssayIndexInner({ essays }: { essays: EssayMeta[] }) {
           <li key={essay.slug}>
             <Link
               href={`/essays/${essay.slug}/`}
-              className="group block rounded border border-zinc-800 p-4 hover:border-zinc-600"
+              className="group block rounded-lg border border-zinc-800 p-5 transition-colors hover:border-accent/60 hover:bg-zinc-900/40"
             >
-              <p className="font-medium text-zinc-100 group-hover:text-accent">
+              <p className="font-medium text-zinc-100 transition-colors group-hover:text-accent">
                 {essay.title}
               </p>
               {essay.excerpt && (
-                <p className="mt-1 text-sm text-zinc-500">{essay.excerpt}</p>
+                <p className="mt-1 text-sm leading-relaxed text-zinc-500">
+                  {essay.excerpt}
+                </p>
               )}
-              <p className="mt-2 font-mono text-xs text-zinc-500">
+              <p className="mt-3 font-mono text-xs text-zinc-500">
                 {essay.date.slice(0, 10)} · {essay.readingTime} min ·{" "}
                 {essay.tags.join(", ")}
               </p>
@@ -64,7 +77,13 @@ function EssayIndexInner({ essays }: { essays: EssayMeta[] }) {
           </li>
         ))}
         {shown.length === 0 && (
-          <li className="text-sm text-zinc-500">Nothing under this tag yet.</li>
+          <li className="rounded-lg border border-zinc-800 p-5 text-sm text-zinc-400">
+            Nothing under this tag yet. The current builds live on the{" "}
+            <Link href="/projects/" className="text-accent hover:underline">
+              projects page
+            </Link>{" "}
+            until their write-ups land here.
+          </li>
         )}
       </ul>
     </>

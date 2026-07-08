@@ -6,7 +6,9 @@ excerpt: "My exemption paperwork for the meeting tax, tested on real megaproject
 readingTime: 7
 migrated: true
 sourceSlug: get-rid-of-meetings
----Early in my career, I spent an average of five hours per week in meetings, most lasting around 40 minutes. However, reflecting on this, many of these meetings could have been shorter or replaced with an email. This realization mirrors findings from Harvard Business Review, which reveal [companies spend a total of $37 billion per year on meetings](https://hbr.org/2018/02/how-to-fix-the-most-soul-crushing-meetings)!
+---
+
+Early in my career, I spent an average of five hours per week in meetings, most lasting around 40 minutes. However, reflecting on this, many of these meetings could have been shorter or replaced with an email. This realization mirrors findings from Harvard Business Review, which reveal [companies spend a total of $37 billion per year on meetings](https://hbr.org/2018/02/how-to-fix-the-most-soul-crushing-meetings)!
 
 The cost of meetings isn't just financial. It also encompasses the loss of time, energy, and creativity. Large organizations may waste up to $100 million per year on unnecessary meetings. Smaller companies, with around 100 employees, could save approximately $2.5 million annually by reducing needless meetings.
 
@@ -16,7 +18,7 @@ I will explore the reasons behind the failure of many meetings, propose strategi
 
 ## The True Cost of Meetings
 
-![True Cost of Meetings](https://meshaelr.com/content/images/2024/01/TrueCostofMeetings.png)
+![True Cost of Meetings](/images/2024/01/TrueCostofMeetings.png)
 
 #### Financial Impact
 
@@ -36,7 +38,7 @@ Let this sink in.
 
 ## The Potential Time Waste of Meetings
 
-![TimeWaste on Meetings](https://meshaelr.com/content/images/2024/01/TimeWasteofMeeting.png)
+![TimeWaste on Meetings](/images/2024/01/TimeWasteofMeeting.png)
 
 #### Importance of Meetings
 
@@ -78,7 +80,7 @@ Understanding why meetings fail is the first step towards improving them. By foc
 
 ## Strategies to Transform Meetings
 
-![Meeting Transformations](https://meshaelr.com/content/images/2024/01/MeetingTransformation.png)
+![Meeting Transformations](/images/2024/01/MeetingTransformation.png)
 
 #### Redefining Meeting Necessity
 

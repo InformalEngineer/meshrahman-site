@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Projects",
@@ -8,18 +9,30 @@ export const metadata: Metadata = {
 // 01-PRD F4 wants each card to carry a live element (demo, diagram, or clip).
 // Phase 1 ships honest cards; the interactive pieces land in Phase 2/3 and
 // each card says what its live element will be, a promise with a receipt.
-const projects = [
+const projects: {
+  title: string;
+  status: "SHIPPED" | "RUNNING" | "IN PROGRESS";
+  body: string;
+  liveElement: string;
+  link?: { href: string; label: string; external?: boolean };
+}[] = [
   {
     title: "This two-site setup",
     status: "SHIPPED",
     body: "One personal site (this one) and one lab (Informal Engineer), both static, deployed from git to the edge, with a permanent redirect map protecting 13 years of old URLs. Total hosting bill: $0 a month.",
     liveElement: "the sites themselves",
+    link: { href: "/essays/zero-dollar-website/", label: "read the story" },
   },
   {
     title: "Homelab",
     status: "RUNNING",
     body: "Proxmox cluster, NAS on used SAS drives, tunnel-only networking with zero open ports. The parts list and guides live on Informal Engineer.",
     liveElement: "live telemetry widget, queued (uptime, containers, storage)",
+    link: {
+      href: "https://informalengineer.com",
+      label: "guides on informalengineer.com ↗",
+      external: true,
+    },
   },
   {
     title: "2011 Toyota Sequoia build",
@@ -32,6 +45,7 @@ const projects = [
     status: "RUNNING",
     body: "The spreadsheet system that has survived a house, a truck, and a kid. The essay version is live, the interactive calculator version is queued.",
     liveElement: "embedded calculator, queued",
+    link: { href: "/essays/my-budgeting-system/", label: "read the essay" },
   },
   {
     title: "Apollo",
@@ -40,6 +54,12 @@ const projects = [
     liveElement: "architecture diagram, queued",
   },
 ];
+
+const badgeStyles: Record<string, string> = {
+  SHIPPED: "bg-accent text-zinc-950",
+  RUNNING: "border border-accent/50 text-accent",
+  "IN PROGRESS": "border border-zinc-700 text-zinc-400",
+};
 
 export default function Projects() {
   return (
@@ -51,10 +71,15 @@ export default function Projects() {
       </p>
       <div className="mt-10 space-y-4">
         {projects.map((p) => (
-          <div key={p.title} className="rounded border border-zinc-800 p-5">
+          <div
+            key={p.title}
+            className="rounded-lg border border-zinc-800 p-5 transition-colors hover:border-zinc-700"
+          >
             <div className="flex flex-wrap items-baseline gap-3">
               <h2 className="font-medium text-zinc-100">{p.title}</h2>
-              <span className="rounded bg-zinc-800 px-2 py-0.5 font-mono text-xs text-accent">
+              <span
+                className={`rounded px-2 py-0.5 font-mono text-xs ${badgeStyles[p.status]}`}
+              >
                 {p.status}
               </span>
             </div>
@@ -62,6 +87,22 @@ export default function Projects() {
             <p className="mt-2 font-mono text-xs text-zinc-600">
               live element: {p.liveElement}
             </p>
+            {p.link &&
+              (p.link.external ? (
+                <a
+                  href={p.link.href}
+                  className="mt-3 inline-block font-mono text-xs text-accent hover:underline"
+                >
+                  {p.link.label}
+                </a>
+              ) : (
+                <Link
+                  href={p.link.href}
+                  className="mt-3 inline-block font-mono text-xs text-accent hover:underline"
+                >
+                  {p.link.label} →
+                </Link>
+              ))}
           </div>
         ))}
       </div>

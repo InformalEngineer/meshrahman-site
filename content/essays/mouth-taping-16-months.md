@@ -6,13 +6,15 @@ excerpt: "An n=1 experiment, 16 months of data, and what I noticed."
 readingTime: 6
 migrated: true
 sourceSlug: mouth-taping
----Mouth taping, a practice that involves securing the mouth shut before bed, has recently emerged as a popular wellness trend. This method, primarily aimed at promoting nasal breathing during sleep, is increasingly backed by scientific research and anecdotal evidence for its array of health benefits. From enhancing sleep quality to potentially aiding in respiratory conditions, mouth taping is more than just a passing fad. In this blog, we explore the multifaceted benefits of mouth taping, supported by scientific evidence and real-life experiences.
+---
+
+Mouth taping, a practice that involves securing the mouth shut before bed, has recently emerged as a popular wellness trend. This method, primarily aimed at promoting nasal breathing during sleep, is increasingly backed by scientific research and anecdotal evidence for its array of health benefits. From enhancing sleep quality to potentially aiding in respiratory conditions, mouth taping is more than just a passing fad. In this blog, we explore the multifaceted benefits of mouth taping, supported by scientific evidence and real-life experiences.
 
 In today's fast-paced world, where new health trends emerge almost daily, it's easy to overlook fad practices. One such practice, which has recently gained traction, thanks to users like Andrew Huberman and [Ali Abdaal](https://www.google.com/url?sa=i&url=https%3A%2F%2Fm.youtube.com%2Fwatch%3Fv%3Dnl8LQrbMdqQ&psig=AOvVaw0UK4aQtNYGYCaz0FOyUXrs&ust=1705359096153000&source=images&cd=vfe&opi=89978449&ved=0CBUQjhxqFwoTCJj9gOz73YMDFQAAAAAdAAAAABAD), is mouth taping. Yes, you read that right – taping your mouth shut before bed. As bizarre as it might sound, this method, aimed at promoting nasal breathing during sleep, has a surprisingly profound impact on overall well-being.
 
 About 16 months ago, I decided to take a leap into this unconventional practice. Like many, I was initially skeptical. Could a small piece of tape really make a difference in my sleep and health? But as I learned more about the science behind it and heard anecdotal success stories, my curiosity got the better of me. This blog post is a journey through my personal experience with mouth taping, coupled with scientific evidence that supports its various health benefits. From enhancing sleep quality to potentially aiding in respiratory conditions, I've discovered firsthand that mouth taping is more than just a passing fad.
 
-![Ali Abdaal Mouth Taping](https://meshaelr.com/content/images/2024/01/image-2.png)
+![Ali Abdaal Mouth Taping](/images/2024/01/image-2.png)
 
 ### Personal Experience
 
@@ -26,7 +28,7 @@ Another surprising benefit was the physical change in my facial appearance. The 
 
 I noticed a considerable reduction in my tendency to breathe through my mouth during the day. This switch to nasal breathing seemed to offer an improvement to my respiratory health.
 
-![Taped Mouth for Sleeping](https://meshaelr.com/content/images/2024/01/MouthTaping.png)
+![Taped Mouth for Sleeping](/images/2024/01/MouthTaping.png)
 
 ### The Science behind Mouth Taping
 
@@ -56,7 +58,7 @@ Since starting mouth taping, I've noticed several specific improvements:
 
 **Reduced Mouth Breathing**: During the day, I find myself naturally breathing through my nose more often, leading to a decrease in mouth breathing. This shift has contributed to an overall improvement in my respiratory health and general well-being.
 
-![Sleeping with taped mouth](https://meshaelr.com/content/images/2024/01/Mouth-Tape-Sleeping.png)
+![Sleeping with taped mouth](/images/2024/01/Mouth-Tape-Sleeping.png)
 
 ### Mouth Taping Misconceptions
 
@@ -79,7 +81,7 @@ For those interested in trying mouth taping, here's a bit of advice based on my 
 
 Tape Recommendation: Look for Waterproof Medical Tape that is at least 1.5" - 2" inches wide. These can be found in most pharmacies. This is the one I use that can be found at [Shopper Drug Mart](https://shop.shoppersdrugmart.ca/life-brand-lb-tape-waterproof-medium/p/BB_057800014737?variantCode=057800014737&source=nspt) in Canada.
 
-![Waterproof Medical Tape for Mouth Taping](https://meshaelr.com/content/images/2024/01/image.png)
+![Waterproof Medical Tape for Mouth Taping](/images/2024/01/image.png)
 
 ### Conclusion
 

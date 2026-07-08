@@ -5,7 +5,9 @@
 export default function NewsletterCTA() {
   return (
     <div className="rounded border border-zinc-800 bg-zinc-900/50 p-5">
-      <p className="font-mono text-xs text-accent">the newsletter</p>
+      <p className="font-mono text-xs text-accent">
+        <span aria-hidden>◆ </span>save point · the newsletter
+      </p>
       <p className="mt-2 text-sm text-zinc-300">
         One email a week: what I built, what it cost, what broke. The list is
         moving to a new home right now, so for the moment subscribing is an
