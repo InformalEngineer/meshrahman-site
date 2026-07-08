@@ -57,6 +57,21 @@ labels/numbers/dates. Generous whitespace on Home/About; denser notebook feel
 on /now and /essays. Motion subtle and purposeful only. Design decisions get
 ONE sitting each (Rule 4); no hero-redesign loops.
 
+**Visual language: [06-design-direction.md](./06-design-direction.md)
+(Rendered Nostalgia).** Read it before any design work. Short version:
+refined editorial base first, era memory (1996 kid: LCD palettes, dial-up,
+library cards, CRT, save points) as rendered artifacts in code only. Never
+copyrighted assets, max one overt artifact per viewport, reduced-motion
+respected. Existing deployments: pixel glyphs on Home cards, hero cursor,
+LibraryCard on essays, DialUpStatus in footer, save-point newsletter label,
+404 colour bars.
+
+## Git identity
+
+Commits and PRs are authored by **Mesh only**. Never add Claude co-author
+trailers, "Generated with" lines, or any AI attribution (history was rewritten
+on 2026-07-08 to purge them; do not reintroduce).
+
 ## TRD constraints (03-TRD)
 
 - **Static export only** (`output: 'export'` is set in next.config.ts). No server

@@ -40,3 +40,65 @@ body {
     scroll-behavior: smooth;
   }
 }
+
+/* --- Rendered Nostalgia utilities (06-design-direction) --- */
+
+/* Terminal cursor. step-end so it snaps like a real TTY, no fade. */
+@keyframes cursor-blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+.cursor-blink {
+  animation: cursor-blink 1.06s step-end infinite;
+}
+
+/* Weak-signal flicker for the 404 test pattern. Stays near-invisible on
+   purpose; it should feel like a tube TV, not a strobe. */
+@keyframes signal-flicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  92% {
+    opacity: 1;
+  }
+  93% {
+    opacity: 0.82;
+  }
+  94% {
+    opacity: 1;
+  }
+  97% {
+    opacity: 0.9;
+  }
+  98% {
+    opacity: 1;
+  }
+}
+.signal-flicker {
+  animation: signal-flicker 5s step-end infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor-blink,
+  .signal-flicker {
+    animation: none;
+  }
+}
+
+/* Library ink stamp: slightly off-square, like it was pressed by hand. */
+.stamp {
+  display: inline-block;
+  transform: rotate(-2deg);
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  padding: 0.05rem 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}

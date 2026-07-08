@@ -1,5 +1,6 @@
 import Link from "next/link";
 import NewsletterCTA from "./NewsletterCTA";
+import DialUpStatus from "./DialUpStatus";
 
 const siteLinks = [
   { href: "/essays/", label: "Essays" },
@@ -59,6 +60,7 @@ export default function SiteFooter() {
             </a>
           </p>
         </div>
+        <DialUpStatus />
       </div>
     </footer>
   );

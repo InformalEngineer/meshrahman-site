@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllEssays, getEssay } from "@/lib/essays";
 import NewsletterCTA from "@/components/NewsletterCTA";
+import LibraryCard from "@/components/LibraryCard";
 
 export function generateStaticParams() {
   return getAllEssays().map((essay) => ({ slug: essay.slug }));
@@ -62,30 +63,16 @@ export default async function EssayPage({
       >
         ← all essays
       </Link>
-      <p className="mt-6 font-mono text-xs text-zinc-500">
-        {essay.date.slice(0, 10)} · {essay.readingTime} min ·{" "}
-        {essay.tags.map((tag, i) => (
-          <span key={tag}>
-            {i > 0 && ", "}
-            <Link
-              href={`/essays/?tag=${tag}`}
-              className="transition-colors hover:text-accent"
-            >
-              {tag}
-            </Link>
-          </span>
-        ))}
-      </p>
-      <h1 className="mt-3 text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
+      <h1 className="mt-6 text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
         {essay.title}
       </h1>
-      {essay.migrated && (
-        <p className="mt-5 border-l-2 border-zinc-700 pl-4 font-mono text-xs leading-relaxed text-zinc-500">
-          changelog: 2026-07, migrated from meshaelr.com
-          {essay.sourceSlug ? ` (was /${essay.sourceSlug})` : ""}. A full
-          rewrite pass in my current voice is queued.
-        </p>
-      )}
+      <LibraryCard
+        published={essay.date}
+        readingTime={essay.readingTime}
+        tags={essay.tags}
+        migrated={essay.migrated}
+        sourceSlug={essay.sourceSlug}
+      />
       <article
         className="prose prose-invert mt-10 max-w-none prose-headings:tracking-tight prose-a:text-accent prose-blockquote:border-accent prose-img:rounded-lg prose-img:border prose-img:border-zinc-800"
         dangerouslySetInnerHTML={{ __html: essay.contentHtml }}

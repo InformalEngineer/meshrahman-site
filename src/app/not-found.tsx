@@ -7,9 +7,32 @@ export const metadata: Metadata = {
 };
 
 export default function NotFound() {
+  // Colour bars like a station that signed off for the night, desaturated to
+  // sit on the dark theme (06-design-direction: CRT signal, rendered in code).
+  const bars = [
+    "#9a9a9e",
+    "#b0a44e",
+    "#5fa8a4",
+    "#6aa05f",
+    "#a05f9a",
+    "#a05f5f",
+    "#5f6aa0",
+  ];
   return (
     <main className="mx-auto max-w-3xl px-6 py-24">
-      <p className="font-mono text-sm text-accent">404</p>
+      <svg
+        viewBox="0 0 280 56"
+        width="280"
+        height="56"
+        aria-hidden="true"
+        className="signal-flicker max-w-full rounded border border-zinc-800"
+        shapeRendering="crispEdges"
+      >
+        {bars.map((color, i) => (
+          <rect key={color} x={i * 40} y="0" width="40" height="56" fill={color} />
+        ))}
+      </svg>
+      <p className="mt-6 font-mono text-sm text-accent">404 · no signal</p>
       <h1 className="mt-4 text-3xl font-semibold tracking-tight">
         This page is not here.
       </h1>

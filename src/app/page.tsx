@@ -1,41 +1,48 @@
 import Link from "next/link";
 import { getAllEssays } from "@/lib/essays";
+import PixelIcon from "@/components/PixelIcon";
 
 // Every card links somewhere real (01-PRD F1: nothing on Home is decorative).
 // Tag cards go to the filtered essay index, build-type cards go to the bench.
 const interests = [
   {
     label: "Homelab",
+    glyph: "server",
     note: "Proxmox, a NAS full of used SAS drives, and the 2am forum threads behind them",
     href: "/projects/",
     hint: "on the bench",
   },
   {
     label: "Money",
+    glyph: "coin",
     note: "real budgets with real numbers, a mortgage I argue with",
     href: "/essays/?tag=money",
     hint: "essays tagged money",
   },
   {
     label: "Career",
+    glyph: "tower",
     note: "a decade of building subways, hospitals, and data centres",
     href: "/essays/?tag=career",
     hint: "essays tagged career",
   },
   {
     label: "ADHD systems",
+    glyph: "checklist",
     note: "the operating system that makes the rest possible",
     href: "/essays/?tag=adhd",
     hint: "essays tagged adhd",
   },
   {
     label: "Builds",
+    glyph: "truck",
     note: "a truck, a house, a 3D printer that mostly listens",
     href: "/essays/?tag=builds",
     hint: "essays tagged builds",
   },
   {
     label: "Experiments",
+    glyph: "flask",
     note: "n=1 tests I actually run (mouth tape included)",
     href: "/essays/?tag=experiments",
     hint: "essays tagged experiments",
@@ -52,7 +59,10 @@ export default function Home() {
         <span className="text-zinc-500">
           (servers, spreadsheets, a truck, a career)
         </span>{" "}
-        and I write down what actually works.
+        and I write down what actually works.{" "}
+        <span aria-hidden className="cursor-blink font-mono text-accent">
+          ▍
+        </span>
       </h1>
       <p className="mt-5 text-lg text-zinc-400 sm:text-xl">
         Including the parts nobody tells you.
@@ -74,9 +84,16 @@ export default function Home() {
               href={item.href}
               className="group rounded-lg border border-zinc-800 p-4 transition-colors hover:border-accent/60 hover:bg-zinc-900/40"
             >
-              <p className="text-sm font-medium text-zinc-100 group-hover:text-accent">
-                {item.label}
-              </p>
+              <div className="flex items-center gap-3">
+                <PixelIcon
+                  glyph={item.glyph}
+                  size={20}
+                  className="shrink-0 text-zinc-600 transition-colors group-hover:text-accent"
+                />
+                <p className="text-sm font-medium text-zinc-100 group-hover:text-accent">
+                  {item.label}
+                </p>
+              </div>
               <p className="mt-1 text-sm text-zinc-500">{item.note}</p>
               <p className="mt-3 font-mono text-xs text-zinc-500 transition-colors group-hover:text-zinc-300">
                 {item.hint}{" "}
