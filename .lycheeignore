@@ -1,0 +1,4 @@
+# Ghost inserted these Unsplash API-credit links into the migrated essays.
+# Unsplash answers 401 to anything without a browser session, so they can
+# never pass in CI even though they work fine for readers.
+^https://unsplash\.com/
