@@ -10,8 +10,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Check links in content
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Check links in the built site
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --no-progress --exclude-mail './src/**/*.tsx' './src/**/*.md' './src/**/*.mdx'
+          # Check the static export rather than the sources. Root-relative links
+          # (/contact/, /images/...) only resolve against a built tree, and the
+          # canonical-URL template literal in essays/[slug]/page.tsx is a real
+          # URL by then instead of a literal ${essay.slug}.
+          # 403 and 429 are how live hosts answer CI, not evidence of a dead link.
+          args: >-
+            --no-progress
+            --root-dir "$GITHUB_WORKSPACE/out"
+            --accept 200..=299,403,429
+            --max-retries 2
+            './out/**/*.html'
           fail: true

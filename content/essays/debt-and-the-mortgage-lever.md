@@ -12,7 +12,7 @@ A year ago I was buried in debt. How did I get to where I was I have no idea. Th
 
 It seems more often than anything that paying that debt is an impossible task, there are gurus who suggest you need to live like a hermit for a few years to get back on track. That works for some, not so much for others. I mean try living in Toronto, while being a student. The money won't matter if you sacrifice your physical and mental well being to attain it.
 
-Learn to hold on to things that make you happy, and cut anything that brings you anything but joy. (Thanks Marie Kondo!) [Check out this article If you need some ways to save more money.](https://www.informalengineer.com/how-to-save-money-fast/)
+Learn to hold on to things that make you happy, and cut anything that brings you anything but joy. (Thanks Marie Kondo!)
 
 "Smart people will never be in debt" that is something I have heard over and over again. Let me tell you one thing. Being in debt does not make you a lesser person. This concept reinforced me.
 
