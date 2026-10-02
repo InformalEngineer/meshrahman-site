@@ -65,11 +65,11 @@ function EssayIndexInner({ essays }: { essays: EssayMeta[] }) {
                 {essay.title}
               </p>
               {essay.excerpt && (
-                <p className="mt-1 text-sm leading-relaxed text-zinc-500">
+                <p className="mt-1 text-sm leading-relaxed text-subtle">
                   {essay.excerpt}
                 </p>
               )}
-              <p className="mt-3 font-mono text-xs text-zinc-500">
+              <p className="mt-3 font-mono text-xs text-subtle">
                 {essay.date.slice(0, 10)} · {essay.readingTime} min ·{" "}
                 {essay.tags.join(", ")}
               </p>

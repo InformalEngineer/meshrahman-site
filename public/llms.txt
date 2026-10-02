@@ -2,7 +2,8 @@
 
 > Personal site of Mesh (Meshael) Rahman: a Toronto-based engineer (P.Eng) and
 > project manager (PMP) who builds things (homelab servers, spreadsheets, a
-> truck, subway and data-centre megaprojects at the day job) and writes down
+> truck, electric bus depots at the day job, and data centres and a subway
+> extension before that) and writes down
 > what actually works, with real numbers. ADHD systems, money, career, and
 > experiments, written in plain first person.
 

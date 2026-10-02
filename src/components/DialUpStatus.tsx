@@ -43,8 +43,8 @@ export default function DialUpStatus() {
   }, []);
 
   return (
-    <p className="mt-8 font-mono text-xs text-zinc-600">
-      <span aria-hidden className="text-zinc-500">
+    <p className="mt-8 font-mono text-xs text-subtle">
+      <span aria-hidden className="text-subtle">
         ▸ CONNECTED 56.0 kbps ·{" "}
       </span>
       {line ?? "measuring…"}

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getAllEssays, getEssay } from "@/lib/essays";
 import NewsletterCTA from "@/components/NewsletterCTA";
 import LibraryCard from "@/components/LibraryCard";
+import { HOME_DESCRIPTION, pageMeta, SITE } from "@/lib/seo";
 
 export function generateStaticParams() {
   return getAllEssays().map((essay) => ({ slug: essay.slug }));
@@ -15,17 +16,13 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const essay = await getEssay(slug);
-  return {
+  return pageMeta({
+    path: `/essays/${essay.slug}/`,
     title: essay.title,
-    description: essay.excerpt || undefined,
-    openGraph: {
-      title: essay.title,
-      description: essay.excerpt || undefined,
-      type: "article",
-      publishedTime: essay.date,
-      url: `https://meshrahman.com/essays/${essay.slug}/`,
-    },
-  };
+    description: essay.excerpt || HOME_DESCRIPTION,
+    type: "article",
+    publishedTime: essay.date,
+  });
 }
 
 export default async function EssayPage({
@@ -46,9 +43,15 @@ export default async function EssayPage({
     "@context": "https://schema.org",
     "@type": "Article",
     headline: essay.title,
+    description: essay.excerpt,
     datePublished: essay.date,
-    author: { "@type": "Person", name: "Mesh Rahman", url: "https://meshrahman.com" },
-    url: `https://meshrahman.com/essays/${essay.slug}/`,
+    image: `${SITE}/og.png`,
+    inLanguage: "en-CA",
+    keywords: essay.tags.join(", "),
+    author: { "@type": "Person", "@id": `${SITE}/#person`, name: "Mesh Rahman", url: SITE },
+    publisher: { "@id": `${SITE}/#person` },
+    mainEntityOfPage: `${SITE}/essays/${essay.slug}/`,
+    url: `${SITE}/essays/${essay.slug}/`,
   };
 
   return (
@@ -59,7 +62,7 @@ export default async function EssayPage({
       />
       <Link
         href="/essays/"
-        className="font-mono text-xs text-zinc-500 transition-colors hover:text-accent"
+        className="font-mono text-xs text-subtle transition-colors hover:text-accent"
       >
         ← all essays
       </Link>
@@ -86,7 +89,7 @@ export default async function EssayPage({
             href={`/essays/${older.slug}/`}
             className="group rounded-lg border border-zinc-800 p-4 transition-colors hover:border-accent/60"
           >
-            <p className="font-mono text-xs text-zinc-500">← older</p>
+            <p className="font-mono text-xs text-subtle">← older</p>
             <p className="mt-1 text-sm font-medium text-zinc-100 group-hover:text-accent">
               {older.title}
             </p>
@@ -99,7 +102,7 @@ export default async function EssayPage({
             href={`/essays/${newer.slug}/`}
             className="group rounded-lg border border-zinc-800 p-4 text-right transition-colors hover:border-accent/60"
           >
-            <p className="font-mono text-xs text-zinc-500">newer →</p>
+            <p className="font-mono text-xs text-subtle">newer →</p>
             <p className="mt-1 text-sm font-medium text-zinc-100 group-hover:text-accent">
               {newer.title}
             </p>
