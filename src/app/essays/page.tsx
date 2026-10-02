@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import EssayIndex from "@/components/EssayIndex";
 import { getAllEssays } from "@/lib/essays";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
+  path: "/essays/",
   title: "Essays",
   description:
-    "Personal writing with real numbers in it: money, career, ADHD systems, and experiments.",
-};
+    "Personal essays with real numbers in them: budgeting, debt, selling on Amazon, meeting costs, and n=1 experiments like 16 months of mouth taping.",
+});
 
 export default function Essays() {
   const essays = getAllEssays();

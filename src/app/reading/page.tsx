@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
+  path: "/reading/",
   title: "Reading",
   description:
-    "Book notes, consolidated. The Western, Islamic, and Eastern reading structure from the old site survives here.",
-};
+    "The books Mesh Rahman rereads, shelved Stoic and Western, Islamic, Eastern, and practical, with notes added as they get written.",
+});
 
 // Consolidated from the old site's philosophy and book-notes pages
 // (04-migration: thin pages fold into one). The three-tradition structure
@@ -70,9 +72,9 @@ export default function Reading() {
               {shelf.books.map((book) => (
                 <li key={book.title} className="text-zinc-300">
                   <span className="font-medium">{book.title}</span>
-                  <span className="text-zinc-500"> · {book.author}</span>
+                  <span className="text-subtle"> · {book.author}</span>
                   {book.note && (
-                    <span className="text-sm text-zinc-500"> ({book.note})</span>
+                    <span className="text-sm text-subtle"> ({book.note})</span>
                   )}
                 </li>
               ))}

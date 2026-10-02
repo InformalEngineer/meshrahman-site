@@ -19,20 +19,20 @@ export default function LibraryCard({
 }) {
   return (
     <div className="mt-6 rounded border border-zinc-800 bg-zinc-900/30 font-mono text-xs">
-      <p className="flex items-baseline justify-between gap-4 border-b border-zinc-800 px-4 py-2 uppercase tracking-widest text-zinc-500">
+      <p className="flex items-baseline justify-between gap-4 border-b border-zinc-800 px-4 py-2 uppercase tracking-widest text-subtle">
         <span>Library record</span>
         <span aria-hidden>№ {published.slice(0, 10).replaceAll("-", "")}</span>
       </p>
       <dl>
         <div className="flex items-center justify-between gap-4 border-b border-dashed border-zinc-800 px-4 py-2">
-          <dt className="text-zinc-500">first published</dt>
+          <dt className="text-subtle">first published</dt>
           <dd>
             <span className="stamp text-accent/80">{published.slice(0, 10)}</span>
           </dd>
         </div>
         {migrated && (
           <div className="flex items-center justify-between gap-4 border-b border-dashed border-zinc-800 px-4 py-2">
-            <dt className="text-zinc-500">
+            <dt className="text-subtle">
               transferred from meshaelr.com
               {sourceSlug ? ` (was /${sourceSlug})` : ""}
             </dt>
@@ -43,13 +43,13 @@ export default function LibraryCard({
         )}
         {migrated && (
           <div className="flex items-center justify-between gap-4 border-b border-dashed border-zinc-800 px-4 py-2">
-            <dt className="text-zinc-500">rewrite pass, current voice</dt>
+            <dt className="text-subtle">rewrite pass, current voice</dt>
             <dd>
-              <span className="stamp border-dashed text-zinc-500">queued</span>
+              <span className="stamp border-dashed text-subtle">queued</span>
             </dd>
           </div>
         )}
-        <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1 px-4 py-2 text-zinc-500">
+        <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1 px-4 py-2 text-subtle">
           <dt>borrow time: {readingTime} min</dt>
           <dd>
             shelved under:{" "}

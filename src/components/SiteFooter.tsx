@@ -17,8 +17,8 @@ export default function SiteFooter() {
       <div className="mx-auto max-w-3xl px-6 py-10">
         <NewsletterCTA />
         <div className="mt-10 grid gap-8 sm:grid-cols-[1fr_auto_auto]">
-          <p className="max-w-md text-xs leading-relaxed text-zinc-500">
-            Mesh Rahman. Engineer (P.Eng) and project manager (PMP) by day,
+          <p className="max-w-md text-xs leading-relaxed text-subtle">
+            Mesh Rahman. Infrastructure program manager (P.Eng, PMP) by day,
             professional tinkerer the rest of the time. The technical guides
             live at{" "}
             <a
@@ -34,13 +34,13 @@ export default function SiteFooter() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-xs text-zinc-500 transition-colors hover:text-accent"
+                className="text-xs text-subtle transition-colors hover:text-accent"
               >
                 {link.label}
               </Link>
             ))}
           </nav>
-          <p className="font-mono text-xs text-zinc-500">
+          <p className="font-mono text-xs text-subtle">
             <a
               href="https://github.com/InformalEngineer"
               className="transition-colors hover:text-accent"

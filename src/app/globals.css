@@ -13,6 +13,9 @@
   --color-foreground: var(--foreground);
   --color-accent: var(--accent);
   --color-muted: var(--muted);
+  /* Tertiary text. zinc-500 (#71717b) measured 4.1:1 on the page background,
+     under WCAG AA for the small mono labels it was used on. This is 5.7:1. */
+  --color-subtle: #8b8b94;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }

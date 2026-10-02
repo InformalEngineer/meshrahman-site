@@ -9,9 +9,9 @@ export default function NewsletterCTA() {
         <span aria-hidden>◆ </span>save point · the newsletter
       </p>
       <p className="mt-2 text-sm text-zinc-300">
-        One email a week: what I built, what it cost, what broke. The list is
-        moving to a new home right now, so for the moment subscribing is an
-        email that says subscribe.
+        One short email a week with what I built and what it actually cost
+        (including the parts that broke). Until the signup form is up,
+        subscribing is one email to me and I add you by hand.
       </p>
       <a
         href="mailto:MeshaelR@gmail.com?subject=Subscribe&body=Sign%20me%20up%20for%20the%20weekly%20notes."

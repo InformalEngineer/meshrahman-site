@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
+  path: "/contact/",
   title: "Contact",
-  description: "Email and socials. One paragraph, no form theater.",
-};
+  description:
+    "Email Mesh Rahman directly. I read everything and reply to most of it, slowly but predictably.",
+});
 
 export default function Contact() {
   return (

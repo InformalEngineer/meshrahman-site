@@ -4,6 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "404",
   description: "This page is not here.",
+  robots: { index: false },
 };
 
 export default function NotFound() {
